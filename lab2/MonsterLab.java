@@ -97,15 +97,12 @@ public class MonsterLab {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Создание объектов
         Goblin goblin = new Goblin();
         Mermaid mermaid = new Mermaid();
         Dragon dragon = new Dragon();
 
-        // Демонстрация счетчика
         System.out.println("Создано монстров: " + Monster.getCount());
 
-        // Демонстрация полиморфизма
         Monster[] monsters = {goblin, mermaid, dragon};
         for (Monster m : monsters) {
             m.displayInfo();
